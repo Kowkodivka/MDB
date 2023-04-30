@@ -1,0 +1,23 @@
+name: Client matrix
+
+on: [ workflow_dispatch ]
+ 
+jobs:
+  example_matrix:
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, ubuntu-20.04]
+        version: [10, 12, 14]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v1
+      - name: Подключение Java 17
+        uses: actions/setup-java@v1
+        with:
+          java-version: 17
+      - name: Настройка доступа к gradlew
+        run: chmod +x ./gradlew
+      - name: Сборка плагина в jar
+        run: ./gradlew jar
+      - name: Запуск Jar файла
+        run: java -jar build/libs/uwu.jar
