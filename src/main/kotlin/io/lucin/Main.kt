@@ -76,7 +76,14 @@ private fun task(address: String) {
     while (true) {
         Entity.EntityBuilder(false, packet(), ip, port, port)
         Thread.sleep(100)
-    }aster/servers_v7.json")
+    }
+
+    while (true) {}
+}
+
+private fun listOfServes(): Seq<String> {
+    val output = Seq<String>()
+    Http.get("https://raw.githubusercontent.com/Anuken/Mindustry/master/servers_v7.json")
         .timeout(0)
         .error(Log::err)
         .block { res ->
