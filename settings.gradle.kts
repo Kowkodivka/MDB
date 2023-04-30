@@ -1,3 +1,3 @@
 
-rootProject.name = "darktech-ddoser"
+rootProject.name = "Darkdustry"
 
