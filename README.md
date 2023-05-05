@@ -1,3 +1,5 @@
-Rename the github folder to .github to access github actions <br>
-Thanks to Даркнесс for his help in "eliminating the competition" <br>
-![image](https://user-images.githubusercontent.com/86189625/235336583-fe96e359-4eda-4e7e-833c-4f6a4afbd11a.png)
+# Darkdustry
+### I am not responsible for the use of this software.
+**The source code is provided for educational purposes and to improve server security.** <br><br>
+Rename the github folder to .github to access github actions. <br>
+Thanks to Darkness and Xeony for this fun time.
