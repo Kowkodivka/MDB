@@ -14,7 +14,7 @@ import mindustry.net.Packets.ConnectPacket
 import java.util.Timer
 import java.util.TimerTask
 
-var forbiddenServers: Seq<String> = Seq.with("thedimas", "Eradicationdustry", "io")
+var forbiddenServers: Seq<String> = Seq.with("darkdustry", "io")
 
 fun main() {
     init()
@@ -24,10 +24,9 @@ fun main() {
         override fun run() {
             System.gc()
         }
-
     }, 0, 1000)
 
-    val targets = Seq.with("darkdustry.tk:6667")
+    val targets = listOfServes();
     targets.forEach { target ->
         Log.info(target)
 
@@ -46,7 +45,7 @@ private fun init() {
 
     Vars.state = GameState()
 
-    Version.build = 140
+    Version.build = 145
 }
 
 private fun packet(): ConnectPacket {
@@ -55,12 +54,12 @@ private fun packet(): ConnectPacket {
     packet.version = -1
     packet.versionType = "official"
 
-    packet.name = "THE DARKNESS#" + Rand().random(0, 999999).toString()
+    packet.name = "#" + Rand().random(0, 999999).toString()
     packet.color = 25
-    packet.locale = "ru"
+    packet.locale = "DEAD"
 
     packet.mods = Seq()
-    packet.mobile = false
+    packet.mobile = true
 
     packet.uuid = uuid()
     packet.usid = usid()

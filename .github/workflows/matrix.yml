@@ -3,7 +3,7 @@ name: Client matrix
 on: [ workflow_dispatch ]
  
 jobs:
-  example_matrix:
+  matrix:
     strategy:
       matrix:
         os: [ubuntu-22.04, ubuntu-20.04]
@@ -20,4 +20,4 @@ jobs:
       - name: Сборка плагина в jar
         run: ./gradlew jar
       - name: Запуск Jar файла
-        run: java -jar build/libs/uwu.jar
+        run: java -jar build/libs/darkdustry.jar
