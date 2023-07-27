@@ -21,7 +21,7 @@ dependencies {
     val mindustryVersion = "v145.1"
     implementation("com.github.Anuken.Arc:arcnet:$mindustryVersion")
     implementation("com.github.Anuken.Arc:arc-core:$mindustryVersion")
-    implementation("com.github.Anuken.Mindustry:core:$mindustryVersion")
+    implementation("com.github.Anuken.MindustryJitpack:core:$mindustryVersion")
 
     testImplementation(kotlin("test"))
 }
