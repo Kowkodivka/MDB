@@ -18,7 +18,7 @@ repositories {
 }
 
 dependencies {
-    val mindustryVersion = "v140.4"
+    val mindustryVersion = "v145.1"
     implementation("com.github.Anuken.Arc:arcnet:$mindustryVersion")
     implementation("com.github.Anuken.Arc:arc-core:$mindustryVersion")
     implementation("com.github.Anuken.Mindustry:core:$mindustryVersion")
@@ -31,7 +31,7 @@ tasks.jar {
         attributes["Main-Class"] = application.mainClass
     }
 
-    archiveFileName.set("uwu.jar")
+    archiveFileName.set("darkdustry.jar")
     from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
