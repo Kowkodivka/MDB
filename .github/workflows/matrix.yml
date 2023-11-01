@@ -20,4 +20,4 @@ jobs:
       - name: Сборка плагина в jar
         run: ./gradlew jar
       - name: Запуск Jar файла
-        run: java -jar build/libs/darkdustry.jar
+        run: java -jar build/libs/you-cant.jar
