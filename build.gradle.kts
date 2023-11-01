@@ -31,7 +31,7 @@ tasks.jar {
         attributes["Main-Class"] = application.mainClass
     }
 
-    archiveFileName.set("darkdustry.jar")
+    archiveFileName.set("mdb.jar")
     from(configurations.runtimeClasspath.get().map { if (it.isDirectory) it else zipTree(it) })
     duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
